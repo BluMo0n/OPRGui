@@ -1,0 +1,277 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local OprMenu = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local ChestFarm = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local FruitSniper = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local WaterWalking = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local NormalSpeed = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local FastSpeed = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+OprMenu.Name = "OprMenu"
+OprMenu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = OprMenu
+Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Frame.Position = UDim2.new(0.341673195, 0, 0.302362204, 0)
+Frame.Size = UDim2.new(0, 405, 0, 251)
+
+Bar.Name = "Bar"
+Bar.Parent = Frame
+Bar.BackgroundColor3 = Color3.fromRGB(32, 40, 157)
+Bar.Size = UDim2.new(0, 405, 0, 29)
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Bar
+
+ImageButton.Parent = Bar
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.925000012, 0, -0.0430000015, 0)
+ImageButton.Size = UDim2.new(0, 30, 0, 30)
+ImageButton.Image = "rbxassetid://8246679496"
+
+TextLabel.Parent = Bar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0296296328, 0, 0.0344827585, 0)
+TextLabel.Size = UDim2.new(0, 187, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Blu's OPR Gui (Blu#9088)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ChestFarm.Name = "ChestFarm"
+ChestFarm.Parent = Frame
+ChestFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChestFarm.Position = UDim2.new(0.612345695, 0, 0.191235065, 0)
+ChestFarm.Size = UDim2.new(0, 118, 0, 41)
+ChestFarm.Font = Enum.Font.SourceSans
+ChestFarm.Text = "Chest Farm"
+ChestFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChestFarm.TextScaled = true
+ChestFarm.TextSize = 14.000
+ChestFarm.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = ChestFarm
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Frame
+
+FruitSniper.Name = "FruitSniper"
+FruitSniper.Parent = Frame
+FruitSniper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FruitSniper.Position = UDim2.new(0.612345695, 0, 0.418326706, 0)
+FruitSniper.Size = UDim2.new(0, 118, 0, 41)
+FruitSniper.Font = Enum.Font.SourceSans
+FruitSniper.Text = "Fruit Sniper"
+FruitSniper.TextColor3 = Color3.fromRGB(0, 0, 0)
+FruitSniper.TextScaled = true
+FruitSniper.TextSize = 14.000
+FruitSniper.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = FruitSniper
+
+WaterWalking.Name = "WaterWalking"
+WaterWalking.Parent = Frame
+WaterWalking.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterWalking.Position = UDim2.new(0.286419779, 0, 0.191235065, 0)
+WaterWalking.Size = UDim2.new(0, 118, 0, 41)
+WaterWalking.Font = Enum.Font.SourceSans
+WaterWalking.Text = "Water Walking"
+WaterWalking.TextColor3 = Color3.fromRGB(0, 0, 0)
+WaterWalking.TextScaled = true
+WaterWalking.TextSize = 14.000
+WaterWalking.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = WaterWalking
+
+NormalSpeed.Name = "NormalSpeed"
+NormalSpeed.Parent = Frame
+NormalSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NormalSpeed.Position = UDim2.new(0.286419779, 0, 0.418326706, 0)
+NormalSpeed.Size = UDim2.new(0, 59, 0, 41)
+NormalSpeed.Font = Enum.Font.SourceSans
+NormalSpeed.Text = "Normal Speed"
+NormalSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalSpeed.TextScaled = true
+NormalSpeed.TextSize = 14.000
+NormalSpeed.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = NormalSpeed
+
+FastSpeed.Name = "FastSpeed"
+FastSpeed.Parent = Frame
+FastSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FastSpeed.Position = UDim2.new(0.432098806, 0, 0.418326706, 0)
+FastSpeed.Size = UDim2.new(0, 59, 0, 41)
+FastSpeed.Font = Enum.Font.SourceSans
+FastSpeed.Text = "Fast Speed"
+FastSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastSpeed.TextScaled = true
+FastSpeed.TextSize = 14.000
+FastSpeed.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = FastSpeed
+
+-- Scripts:
+
+local function VJOYB_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+	
+end
+coroutine.wrap(VJOYB_fake_script)()
+local function UDJS_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(UDJS_fake_script)()
+local function RTQCL_fake_script() -- ChestFarm.ChestClient 
+	local script = Instance.new('LocalScript', ChestFarm)
+
+	local ChestLists = game.Workspace[".Chests"]
+	local Chests = ChestLists:GetChildren()
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.Activated:Connect(function()
+		for i,v in pairs(Chests) do
+			wait(.1)
+			if v.Name == "SmallChest" or v.Name == "LargeChest" then
+				print(v.Name)
+				local ChestPos = v.ChestBase.Position
+				local PlayerPos = Player.Character.HumanoidRootPart.Position
+				Player.Character.HumanoidRootPart.Position = ChestPos
+				wait(.1)
+				Player.Character.HumanoidRootPart.Position = PlayerPos
+			end
+		end
+	end)
+end
+coroutine.wrap(RTQCL_fake_script)()
+local function RYSKR_fake_script() -- FruitSniper.FruitClient 
+	local script = Instance.new('LocalScript', FruitSniper)
+
+	local Works = game.Workspace:GetChildren()
+	local Player = game.Players.LocalPlayer
+	
+	local Items = {
+		"Bat Bat",
+		"Bomb Bomb",
+		"Night Night",
+		"Chop Chop",
+		"Revive Revive",
+		"Rubber Rubber",
+		"Spring Spring",
+		"Stone Stone",
+		"Gold Gold",
+		"Dice Dice",
+		"Paw Paw",
+		"Snow",
+		"Blood Blood",
+		"Swamp Swamp",
+		"Mochi Mochi",
+		"String String",
+		"Phoenix Phoenix",
+		"Operation Operation",
+		"Nano Nano",
+		"Hollow Hollow",
+		"Barrier Barrier",
+		"Flame Flame",
+		"Shine Shine",
+		"Magma Magma",
+		"Dark Dark",
+		"Sand Sand",
+		"Thunder Thunder",
+		"Ice Ice",
+		"Quake Quake",
+		"Buddha Buddha",
+		"Venom Venom",
+	}
+	script.Parent.Activated:Connect(function()
+		for i,v in pairs(Works) do
+			if table.find(Items, v.Name) then
+				local PlayerPos = Player.Character.HumanoidRootPart.Position
+				wait(.1)
+				print(v.Name)
+				local HandlePos = v.Handle.Position
+				Player.Character.HumanoidRootPart.Position = HandlePos
+				wait(.1)
+				Player.Character.HumanoidRootPart.Position = PlayerPos
+			else
+				print("Not Found")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RYSKR_fake_script)()
+local function GGXFNWY_fake_script() -- WaterWalking.FruitClient 
+	local script = Instance.new('LocalScript', WaterWalking)
+
+	local Works = game.Workspace:GetChildren()
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.Activated:Connect(function()
+		for i,v in pairs(Works) do
+			if v.ClassName == "Model" and v:FindFirstChild("SEA1") then
+				v.SEA1.CanCollide = true
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(GGXFNWY_fake_script)()
+local function LAIK_fake_script() -- NormalSpeed.FruitClient 
+	local script = Instance.new('LocalScript', NormalSpeed)
+
+	local Works = game.Workspace:GetChildren()
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.Activated:Connect(function()
+		Player.Character.Humanoid.WalkSpeed = 16
+	end)
+	
+end
+coroutine.wrap(LAIK_fake_script)()
+local function GFDV_fake_script() -- FastSpeed.FruitClient 
+	local script = Instance.new('LocalScript', FastSpeed)
+
+	local Works = game.Workspace:GetChildren()
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.Activated:Connect(function()
+		Player.Character.Humanoid.WalkSpeed = 100
+	end)
+	
+end
+coroutine.wrap(GFDV_fake_script)()
