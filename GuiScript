@@ -109,7 +109,7 @@ local function AAAGOE_fake_script() -- ImageButton.LocalScript
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent.Parent:Destroy()
 	end)
-	
+
 end
 coroutine.wrap(AAAGOE_fake_script)()
 local function HHTNZ_fake_script() -- Frame.LocalScript 
@@ -127,7 +127,7 @@ local function ZTHFET_fake_script() -- ChestFarm.ChestClient
 	local ChestLists = game.Workspace[".Chests"]
 	local Chests = ChestLists:GetChildren()
 	local Player = game.Players.LocalPlayer
-	
+
 	script.Parent.Activated:Connect(function()
 		for i,v in pairs(Chests) do
 			wait(.1)
@@ -148,7 +148,7 @@ local function TQTKRM_fake_script() -- FruitSniper.FruitClient
 
 	local Works = game.Workspace:GetChildren()
 	local Player = game.Players.LocalPlayer
-	
+
 	local Items = {
 		"Bat Bat",
 		"Bomb Bomb",
@@ -197,7 +197,7 @@ local function TQTKRM_fake_script() -- FruitSniper.FruitClient
 			end
 		end
 	end)
-	
+
 end
 coroutine.wrap(TQTKRM_fake_script)()
 local function JLIAX_fake_script() -- WaterWalking.WaterClient 
@@ -206,7 +206,7 @@ local function JLIAX_fake_script() -- WaterWalking.WaterClient
 	local Works = game.Workspace:GetChildren()
 	local Player = game.Players.LocalPlayer
 	local d = true
-	
+
 	script.Parent.Activated:Connect(function()
 		if d == true then
 			for i,v in pairs(Works) do
@@ -214,7 +214,6 @@ local function JLIAX_fake_script() -- WaterWalking.WaterClient
 					v.SEA1.CanCollide = true
 				end
 			end
-			wait(1)
 			d = false
 		elseif d == false then
 			for i,v in pairs(Works) do
@@ -222,10 +221,8 @@ local function JLIAX_fake_script() -- WaterWalking.WaterClient
 					v.SEA1.CanCollide = false
 				end
 			end
-			wait(1)
 			d = true
 		end
 	end)
-	
 end
 coroutine.wrap(JLIAX_fake_script)()
